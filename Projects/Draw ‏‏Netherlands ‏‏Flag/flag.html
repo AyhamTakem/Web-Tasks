@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netherlands Flag</title>
+</head>
+<body>
+    <script>
+        let body = document.querySelector("body");
+        body.style.margin = "0";
+
+        let container = document.createElement("div");
+        container.style.width = "100%";
+        container.style.height = "100vh";
+        container.style.position ="relative";
+        body.appendChild(container);
+
+        // deep_red
+        let red = document.createElement("div");
+        red.style.position = "absolute";
+        red.style.top = "0";
+        red.style.width = "100%";
+        red.style.backgroundColor = "#ae1c28";
+        red.style.height = "31%";
+        container.appendChild(red);
+
+        // Blue
+        let blue = document.createElement("div");
+        blue.style.position = "absolute";
+        blue.style.bottom = "0";
+        blue.style.width = "100%";
+        blue.style.backgroundColor = "#21468b";
+        blue.style.height = "31%";
+        container.appendChild(blue);
+    </script>
+</body>
+</html>
